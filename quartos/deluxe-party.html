@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Hotel</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/quarto-single-style.css">
+
+		<link rel="stylesheet" type="text/css" href="../css/preloder.css">
+		<!-- CSS -->
+
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+		<!-- EXTERNOS -->
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- EXTERNOS -->
+
+		<script type="text/javascript">
+
+		//<![CDATA[
+			$(window).on('load', function () {
+			    $('#preloader .inner').fadeOut();
+			    $('#preloader').delay(350).fadeOut('slow'); 
+			    $('body').delay(350).css({'overflow': 'visible'});
+			})
+		//]]>
+
+		</script>
+
+		<script type="text/javascript">
+            jQuery("document").ready(function($){
+
+            var nav = $('.img-main');
+            var menu = $('header');
+            var center = $('.center');
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 30) {
+                    nav.addClass("fixar-imgMain");
+                    center.addClass("marginAdd");
+                } else {
+                    nav.removeClass("fixar-imgMain");
+                }
+           		 });
+            });
+    	</script>
+
+    	<script type="text/javascript">
+            jQuery("document").ready(function($){
+
+            var menu = $('header');
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 30) {
+                    menu.addClass("fixar-menu");
+                } else {
+                    menu.removeClass("fixar-menu");
+                }
+           		 });
+            });
+    	</script>
+
+	</head>
+
+
+	<body>
+
+		 <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+           <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+           <div class="bolas">
+              <div></div>
+              <div></div>
+              <div></div>                    
+           </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
+
+
+		<!-- INFO TAB -->
+			<section class="info-tab">
+
+				<div class="info-tab-tel">
+					<p>(xx) 1234 - 2345</p>
+				</div>
+
+				<nav>
+					<ul class="info-tab-itens">
+						<li><a href="">sobre os quartos</a></li>
+						<li><a href="">trabalhe conosco</a></li>
+						<li><a href="">termos e condições</a></li>
+					</ul><div class="clear"></div>
+				</nav>
+
+			</section>
+		<!-- INFO TAB -->
+
+		<!-- HEADER -->
+			<header>
+
+				<div class="logo">
+					<a href="../index.html"><img src="../img/logo.png"></a>
+				</div><!--LOGO -->
+
+				<nav class="menu">
+					<ul class="hdr-menu">
+						<li class="ativo"><a href="">nossos quartos</a></li>
+						<li><a href="">opinião dos clientes</a></li>
+						<li><a href="">fotos</a></li>
+						<li><a href="">contato</a></li>
+						<li><a href="">sobre</a></li>
+					</ul><div class="clear"></div>
+				</nav>
+
+			</header>
+		<!-- HEADER -->
+
+		<!-- SECTION: CONTENT -->
+		<section class="content">
+
+			<section class="quarto-left">				
+
+				<img src="img/quarto1.jpg">
+				
+			</section>
+
+		<!-- SECTION: IMG MAIN -->
+
+
+		<!-- SECTION BLOCO-RIGHT -->
+
+			<section class="bloco-right">
+
+				<article class="box">
+
+					<div class="br-info-img">
+							<a href="quartos/deluxe-party.html"><img src="img/quarto3.jpg"></a>
+					</div>
+
+					<article class="br-info">	
+
+						<div class="br-title">
+							<h1><a href="">Deluxe Party</a></h1>
+						</div>		
+						
+						<div class="separador">
+							<p>Excelente para 2 adultos</p>
+						</div>
+
+						<div class="separador">
+							<p>Inclui café da manhã</p>
+						</div>
+
+						<div class="separador">
+							<p>Serviços de limpeza</p>
+						</div>
+					</article>
+
+				</article><!-- BOX -->
+
+			</section><<!-- SECTION BLOCO-RIGHT -->
+
+
+		<!-- FOOTER -->
+			<footer>
+
+				<div class="p"><p><b>Nome do hotel</b> &copy Todos os direitos reservados</p></div>
+
+				<div class="f-reservar">
+					<a href=""><p>Reserve um quarto</p></a>
+				</div>
+
+			</footer>
+		<!-- FOOTER -->
+
+	</body>
+
+</html>
